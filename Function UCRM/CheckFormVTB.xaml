@@ -1,0 +1,204 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CheckFormVTB" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1498,2193" sap2010:WorkflowViewState.IdRef="CheckFormVTB_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CheckFormVTB" sap:VirtualizedContainerService.HintSize="642,2128" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Cổng Chăm Sóc Khách Hàng | Vietinbank" sap:VirtualizedContainerService.HintSize="580,2017" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,1800" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dataTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Trang tính1" WorkbookPath="C:\Users\Bui Nguyen Minh Quan\Downloads\excel_update_format_phone(1).xlsx" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,1557" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,1440" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Họ tên'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Text="[CurrentRow.Item(&quot;Ho ten&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/cskh-vietinbank" CvType="InputBox" DesignTimeRectangle="741, 874, 777, 36" DesignTimeScaleFactor="1.1299999952316284" ElementType="InputBox" FriendlyName="'INPUT fld_hoten_4481375'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='fld_hoten_4481375' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' id='fld_hoten_4481375' tag='INPUT' class='ant-input css-k7429z' aaname='Họ tên: ' /&gt;" Guid="59dc7ff3-f7be-402d-8e43-b94e66b6f676" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAw0AAAAoCAYAAAC8aBb4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHlSURBVHhe7dtBaoNQGIXR7n+HAZ04SEmLk5QOrIFXbisl0fRfgJ4D30zn76LvZfq6NUmSJEn6L6NBkiRJUpnRIEmSJKns6Wi4fny28/m19X3fTqeTJEmSpB2Xc3/O/9kBz/bBZjRc3t5b13VtHMc2TVMDAAD2Lef+nP+zA7IH1hvhYTTkgWEY2jzPy+sAAMBRZAdkD6yHw99oyKeILAuDAQAAjit7ILvg/lelv9GQf5jySQIAADi27ILsg81oyOUHdxgAAIDsgp99sB4NuTUNAAAQ2QdGAwAA8C+jAQAAKBkNAABAyWgAAABKRgMAAFAyGgAAgJLRAAAAlIwGAACgZDQAAAAlowEAACgZDQAAQMloAAAASkYDAABQMhoAAICS0QAAAJSMBgAAoGQ0AAAAJaMBAAAoGQ0AAEDJaAAAAEpGAwAAUDIaAACAktEAAACUno6Gvu/bNE3LIwAAwFFlF/zsg/VoOJ9f2ziOy2MAAMBRZRdkH2xGw/Xjs3Vd1+Z5Xh4FAACOJnsguyD7YDMa0uXtvQ3DYDgAAMABZQdkD2QX3O+Eh9GQ8kCWRT5JuOMAAAD7l3N/zv/ZAevBkDajIeVTRP5hyuWH3JqWJEmStN9y7s/5//6XpPuejgZJkiRJ+u3WvgEX0NGP6f3HLgAAAABJRU5ErkJggg==" InformativeScreenshot="514523a5fece922f43b24158531eb4ff.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvTextArgument="Ho ten:" CvType="Text" DesignTimeRectangle="741, 836, 75, 28" ElementType="Text" FriendlyName="'Họ tên'" FullSelectorArgument="&lt;webctrl aaname='Họ tên: ' class='ant-form-item-required' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' parentid='__next' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Họ tên: ' class='ant-form-item-required' type='' parentid='__next' tag='LABEL' check:innerText='Họ tên:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAgCAYAAABTliUJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN8SURBVGhD7ZbLTxNRFIf9S3BNkAWyACMssKDUgDUYKy+DFsFgBHlGDWKCIOIKE6FG5VHRhWAIGkQMUcAXwbhQdCUKooAo8hQEUZKjv5NMM1OmpZ1raU1m8aXtuWfOvf3mvjYs/1ohHW3o8gTQ5QmgyxNAlyeALk8AXZ4AujwBdHkC6PIE0OUJICyvpsZKAQEbKT39EE1Ozaxqb2tr5/a4uHga/jiyqt0bTHybpLz8Au43KiqKenv7VPNE+S/lSX0eP3FyVdvs3HcqLj5F0dExdLe9g3Jz87wm0Kk8ijepxh3xN3nOWPixpBoXwWfyfi7/5pmRlJxCQUGbGLN5H7W0tNLi0rKihgTqox/UkyOXiJlXW1tHRuNObgsLC6fCoiIaHPqgWqep+RaVn63gvMDAQB5DV3ePPdcVCnkQJkmTf7oSqUUexFmtl3iwICZmOyP9rqw8rzpTZufm+bnklBSuuctkopKS09R4/Qa3Y6/LyjrCbViq+QWF/HJQc0dsLPW/fsN5cnkGQzTnZucc4zEghiX/8lW/om81VGeeJMyVNAlJ3lrI5XV2PqDQ0FAe9JOnz+y18B0xtCFHijvibNk22K6xKIslnUUihhd1sbqG8zED8VLk8jIyD9tzP49/pdTU/Ry32Rrtz1dVXaCQkM38id9Sfz6Rhw0dsdLSM4rB4DtiaEOOFHdETd70zByLQPxmU7MiHzMOM8xk2k2fRsYU8lpv31Hkoibi6AO/ITQxMYljCQl7aGR0zJ677stWPnDHPwnwxl3VA2ryUBt9IO6MiMhI6nv+QjEGjE9e21EeXujlK1dpa0QEf64584ArYXL8TV5wcDAdzc7hvdCRsrJyejvw3iN5rlh3eYh5Y9m6eik4vbHcsGTnFxa9L89dtMj7VwdGzt8TEjKkeG1dPccPWiw0/mXCHu/peUzh4Vtor9lMo2PjHsnTtGzdRYs8/OGKc5V8MuJ+F2s0Mvju6qoi8bCrmwWj7jaDga8Z6BunpnRo4N6GeEZGJueiLk5jPO+JPLcPDC1okQewlHAhxqVUuiTjToaLs/ztqoH2+gYbzwbUhiSctmhzvCSjblraAerufmSv6+nM8+iqouMePpc3NT3Ll9jqaivPGrUcf8Xn8qRljT3pXsd91Rx/xefyBt4N8r6HTXloaFg1x1/R9zwBdHkC6PIE0OVpZoX+ALd4/3aaKE9bAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Số điện thoại'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Text="[CurrentRow.Item(&quot;phone&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/cskh-vietinbank" CvType="InputBox" DesignTimeRectangle="836, 613, 491, 27" DesignTimeScaleFactor="0.8299999833106995" ElementType="InputBox" FriendlyName="'INPUT fld_sdt_31159743'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='fld_sdt_31159743' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' id='fld_sdt_31159743' tag='INPUT' class='ant-input css-15rg2km' aaname='Số điện thoại:' /&gt;" Guid="0932b6b3-8bd8-4349-bc8c-939d349e2ac2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAe8AAAAfCAYAAADObEVgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFaSURBVHhe7dmxasNAFETR/P8fWpXkxnYjDKoSjNZMcIwcpY73wTkw3faXJ318ft2amZmZ1Zl4m5mZFdsu3vN8bdN0bMMwtMPhYGZmZm9YOpwep8u/W/0S79P50sZxbMuytHVdGwDwHulwepwup8/bXj/jnbLngWgDQD/S5fR5e4E/453TPIUHAPqSPqfTu3jn27qrGwD6kz6n07t45+c4ANCndFq8AaAQ8QaAYsQbAIoRbwAoRrwBoBjxBoBixBsAihFvAChGvAGgGPEGgGLEGwCKEW8AKEa8AaAY8QaAYsQbAIoRbwAo5s94D8PQ1nV9PAEAepE+p9O7eE/TsS3L8ngGAPQifU6nd/Ge52sbx9H1DQAdSZfT53R6F+/sdL58P0jhRRwA3icdTo/T5fR52+uXeGcpe07zfFvPz3EzMzP7/6XD6fH24v7ZLt5mZmbW98TbzMys1G7tDpxmpqlkZI4TAAAAAElFTkSuQmCC" InformativeScreenshot="a3c9d8ddbcbfd2bf345f89ba9d5d77d6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="So dien thoai:" CvType="Text" DesignTimeRectangle="836, 586, 96, 21" ElementType="Text" FriendlyName="'Số điện thoại'" FullSelectorArgument="&lt;webctrl aaname='Số điện thoại:' class='ant-form-item-required' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' parentid='__next' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Số điện thoại:' class='ant-form-item-required' type='' parentid='__next' tag='LABEL' check:innerText='Số điện thoại:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAAZCAYAAADHXotLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATTSURBVGhD7VffSxtZFN6/JP4DEQJ5M/gQnxRZIj5EEVpfGhFCfBEfGubFWEjsgxIhJQ+VlK3kYYkBiULJhho2EEJFwoCEFLGCZAkhEpZIkXbdfnvu/MjMZCYxQXSnMA8fzNxz555z73fO+e788u37HSyYBxYhJoNFiMlgEWIyWISYDE9EyFc0r+qoNb4a2Cyo8TSE/BGCyzGPN7yBzYIGT0LIRTGN7GnL0KbDIQebbQTBQ/E9/3oKdmcAe1dd8x4FRwiS77lY1cD2cAyyFz0hH8PAq2PtmBq3l8hwi3A7R4SDs4/NwB87QVM956aOTHgJwf0Ctl8sYfvPunYNA1Ri88J6Cqiizmj87RImvSFkr5W5TSLN7XTBNbb4gKqrI7vFIbiVQ60z9riEGO2lGx1C/kn4RSI+/4YfiXPlXTX52/cWstwEbI4ZBN+lkdpPY5ebgd02Cv/+gBVwH7oqRIe/q8jv51Bu3KFdLSB1yGuTYWBU8cZLxHvjqHTGHpeQQaCtEFYdy2H8+8ovkKKxCZA2sZxUHUIVqQ3KtPd8Z177NInVBRcRRXOdE3jOHeHiVp6vRfs0Af+0UyDBOR3A7s6ahhCxcjhk5G/O6dCeTcBptPZZHHM0vrqjXnMNqXPJrkLmJatCBaI/iZBwkipbjN8+RhVeVCXbXzmyTYn+HS54VuIoUXJ07I0cInJ8NicmVxIoS/Hp9mIAA0KIjF89PQhpIbUySoFM4Xk4gWyxqr85fUnA5xiBezmKDF9H+TCEOXq3r6T1mXxNBzBOtlkOKZpbKdJButUH1LWJ6xyCZLcvbCJfpVsbn4Sfvve8PhHXkwiR16vxYixGvtuNAiKz5GuW1qIbYPOGjYuEKB0gLsbjiaLMvrstYJ35p/X3aO+deD2bKAmHXsfeMp2PJ4QMxVc53hTi8WyJydpNSD7MNGURu9Sa5bj0LYtI+fFR9S7ZO7ihiiANmRwjx0IWSJkt9fISCZfNFkBK1Scv3i7SmKgJnXUIzd8DND6FyKfuMWNCjOYL/sZDyLN3uUIOFHtmjWLUtCUZvVvWpEwwQdxPb//CDZJathjvJUrUxpULDI9tRvrLI+FdR8gGa//ac9GJOiPCuDoMcNOiLIjCR1kqZ5HYChSnAnroghhgF1F8FJ4ehIjPbP1uSP4kQtR+hHiGJEStIXr/XfFKPuVvLg424fPKLUtCD0KMoCOkLxpprE5Tu4opesEgZKGDQ5aeh6mQ2rslGu/KuIPeGiLOn0HkmNoR+9HsoIU2+/aRCbm3Qq6oRbLvt07QFlpY/woxwnCEUEnuvmAawnpsDiX+BNlYAG4Kws3lxD7NDoVpCIlZSeijcfhY3zXSEElvNJrAenIPQmQNkdeu0S0rssB6ttTjhyKkTnsh2zj9F/A8Kl/YWH9CFA0jjRA0Ko3gLPMvaci5VC1ECEuUclI8mwe1rHshaYj6P8QX1t6imiR2g96ymkUSTuFGNAqXZ8hbFt1i3M/IJt+ihiKEfDPRFbSQMvwDG7uHEAbyH+l5y6LfgvA8XJRkLLY5LkqE0XMvQvqJugVz4OckhFrHupe0bEe5DZkKZ9SKp+ex/mH4n+WflhBBSzYKxvb/G6d0U3Q44Xt/aWzvA6tlmQwWISaDRYjJYBFiMliEmAp3+A/P1Y6YM2MCYQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Text="[CurrentRow.Item(&quot;email&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/cskh-vietinbank" CvType="InputBox" DesignTimeRectangle="836, 682, 491, 27" DesignTimeScaleFactor="0.8299999833106995" ElementType="InputBox" FriendlyName="'INPUT fld_emailkh_39162…'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='fld_emailkh_39162188' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' id='fld_emailkh_39162188' tag='INPUT' class='ant-input css-15rg2km' aaname='Email' /&gt;" Guid="a9ed9a4b-8c86-48ed-88a9-a902b78b5727" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAe8AAAAfCAYAAADObEVgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFaSURBVHhe7dmxasNAFETR/P8fWpXkxnYjDKoSjNZMcIwcpY73wTkw3faXJ318ft2amZmZ1Zl4m5mZFdsu3vN8bdN0bMMwtMPhYGZmZm9YOpwep8u/W/0S79P50sZxbMuytHVdGwDwHulwepwup8/bXj/jnbLngWgDQD/S5fR5e4E/453TPIUHAPqSPqfTu3jn27qrGwD6kz6n07t45+c4ANCndFq8AaAQ8QaAYsQbAIoRbwAoRrwBoBjxBoBixBsAihFvAChGvAGgGPEGgGLEGwCKEW8AKEa8AaAY8QaAYsQbAIoRbwAo5s94D8PQ1nV9PAEAepE+p9O7eE/TsS3L8ngGAPQifU6nd/Ge52sbx9H1DQAdSZfT53R6F+/sdL58P0jhRRwA3icdTo/T5fR52+uXeGcpe07zfFvPz3EzMzP7/6XD6fH24v7ZLt5mZmbW98TbzMys1G7tDpxmpqlkZI4TAAAAAElFTkSuQmCC" InformativeScreenshot="280eb76e047746fd8cd4fc7e65b266f5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Email" CvType="Text" DesignTimeRectangle="836, 654, 44, 21" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl aaname='Email' class='ant-form-item-required' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' parentid='__next' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Email' class='ant-form-item-required' type='' parentid='__next' tag='LABEL' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAYAAAB3oa15AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH0SURBVFhH7ZTPS8JgGMf7S9Y/YBDsVqc6KRFGB5WgW4YgdumkeBLB1aEwMDoIg5BOFYR5MckokCBChBhGRCCBROGhDlFZ395371bTtPkDmcIOH/DZ82x7Pu/zzKG39yoGGVPAaEwBozEFjKavBU5WbbDwPiRKLE76h8E5tiBpatoWkB/C1ePC5lXj+m6Q4ouwOkJIP7G4NYHjCBDO1l7TwARsWI7vY3dPJQNJeUkv+VfgQ/Syxq+38SXe/MaaYgoTaHbiKQTIRJwREcLcOCzkNz9FViCXwfqCDTyJLWMuCEeV33seMhDmJ+Ucx/GwLonIv7KcFHORa0EklVr9CdDT90TwGfbKEjU5hVYEuAnSdKGM+1wUzlFaPwnvTgH3xTMIDhLbo8jL9WUkPCMkDiFZLEPKrsBJ7revFeTndShAmp+26wjUEjhU80zAvsEaeHsvYpM2rHlpbVN3OCcrmL5UJ1LA+iyp96ca1OoI/KwMkfg61sSaYgoTmIFwSk64xHh8UfPKCsWKSqwnUMXtwQrcDnWFFDoRUKGNNzt9ChPQ+QZaFSiJcNP6tQs8y3vfxQRahQnU/wuRNbiia9CmwM2WvPNUgE4yv+PDRLcT0IMJ/IU13e4KVZCOuDAuf+g8nMEoAr2eQL9hChiNKWA0poDRDLhAFd8OayvdavpmNQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gửi phản hồi'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/cskh-vietinbank" CvElementArea="834, 720, 115, 34" CvTextArea="849, 728, 83, 18" CvTextArgument="Gui phan hoi" CvType="Button" DesignTimeRectangle="836, 722, 112, 32" DesignTimeScaleFactor="0.8299999833106995" ElementType="Text" FriendlyName="'Gửi phản hồi'" FullSelectorArgument="&lt;webctrl aaname='Gửi phản hồi' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Gửi phản hồi' type='' parentid='__next' tag='DIV' class='sc-2b115f0e-6 dAMaxh' check:innerText='Gửi phản hồi' /&gt;" Guid="808b751b-2074-414d-936c-69bfd08610bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHQAAAAkCAYAAABYFB7QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASASURBVHhe7ZvPayJJFMfzH+w17H8wxxxznaNHb+PV23gUlgUvgQ0BGQ+7KJmA7kkMi+CSYUYITGSXBCUIuhg20pBEhw2aILhioNEV4bvvdXVrq+WsG3XGbqrgC9bPrqpPvVfPxN76ZzCEknukgLpME0C1xt/wRU/xjf8ttl79pLThYk7Mi7nNAOXCb18npB2VNlvMzYI6AsqkZY2VnCHmNwFUuVlni/lNAJU1UnKWFFCXSQF1mRRQl0kBdZkU0C+qOHYO3sGzl5TUrUZfGWgakZs+Ok8krYgdaZt1KQ7/ZVc8+1GDT9pm9dp930IPbcRC8vpl9ZWBJrEbTsNz0kRvcI+grS54NQSGbSTC9vYL6vAWDwDK7yV1I7G1ZLAbvUUNXaSe8xySr6jTk1qISOrkSiNwUkHo0LTS1D0BBqq5d1Ptnqe1AH0RrSDX6hsTNdKgj9p1Cd6ApP0PFZSfmogcxI389vcZeA6O8TrP1tPE/nNO8kJAWb8h29aRS6cldYtpEaAv3pRoP5qIpeuoteoImWs1dKihpvdRODme6PNcrRyocCmUel3k8hXETitIXeuirKXBK+kzVhKha7LMzu1yLnBhoMvr/1voerVaoIEiCgNa34AWuGeviyNY0tHRu8jERVnkziA83ggTAoY6ssnjz26U0bdzj0SxjQ7xp054uLF5AAvoJVk/D8NJbyH2o2UZdH+eU1+eK6cBWemvYyu1xh8dRBq/9scFds16u6x5Zj62zLlQ108VmzdKIvB7Cw+2ZxWyH7BtjbHiw7daoCctY86d0pm83qZ5QB+K4h8E/wmU214V4N1Lw5u+N/r2tILYKOtwDLrI5shL5Joi/1dFBF7mvVW7PIMnfIZUg0mMAxUxPkEsFuALnyKi9SnfR/bn8RwsiXnSsx/rSJA3SmgiX/0oXKj3vEs5PhAl+OlZkVG9eYA2Gii5W072yVkLtpIFbGmgPXsQFR+Nt895cyxrU7deHSPWoALTle8cFekqoMNgWtF2luetI3Mo8sZYT3X4jb6kozo6VCTbdDFPW9QaqqBKJWIdF8jxyWmYB8nQB6TaVGZdKxsNVGKhRpATpu9eHMlSXe1cRHNLA526Z0cb+x3lJZs00WfvAqlP5E4tN2ikKaD28T+z6bPzLKFMJWId4jPuSqP2rIm1bzRQ83RCJ+uZiGjpDr2adFszQE0rWKWFzgMa0sjF0j0feyO+OkgtdCVAnW6hJF+eF0jpiQIFvr84yr1hmMSATqoVWHjMu6Wav4AvWkDmUUQUCwOl1Ln7E8HoKYL5tmH903foPKD7/JmBRslz0LNzfJLWApTqL7neXCfdx6Fi15irM+5QQ3G8/EVDuW2GfJwosivnC3hpt9oAByMCtBFl5kVgszDQqSi309Dgn45y5wDdPtJQNc8dem1krvlwrQco/yEhmHdqlPuFNLPhSiMpoC6TI4EqzZcC6jIpoC6TAuoyKaAu0wRQ9UNrZ2vmh9bqVQhna+ZVCPWyknMlfVnJgsqklft1hpgT87JgzgBVcr4UUFdpiH8B7SxJrGoQYsgAAAAASUVORK5CYII=" InformativeScreenshot="5a42d43df2aa19c412c385cfcf6e8544.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Go to main site'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/cskh-vietinbank" CvElementArea="861, 592, 125, 40" CvTextArea="874, 605, 98, 13" CvTextArgument="Go to main site" CvType="Button" DesignTimeRectangle="863, 594, 123, 37" DesignTimeScaleFactor="0.8299999833106995" ElementType="Text" FriendlyName="'Go to main site'" FullSelectorArgument="&lt;webctrl aaname='Go to main site' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Go to main site' tag='DIV' type='' class='sc-df21ac12-5 iAgOML' check:innerText='Go to main site' /&gt;" Guid="e814a94e-a256-49e7-97c3-ccfe66ecba62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH8AAAApCAYAAAAcavb5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATMSURBVHhe7ZvbjxRFFMb993z1zRf1SR/UB42JMZqgJkYjUYlkEyRgwICRrEJw5Q6yAbkLyP3mclFuLijozqVnuqeP9avmNLVtzewMsyxxqr7stzNdXVV9zvnqnKrZyT4lEcEiih8wZok/frglz39Rk6cXz0SOGNEVfV2U4nPDNyhytOgugFL8mPFhEJ0Vpfi+jpGjSUUUP0AqovgBUhHFD5CKKH6AVETxA6Qiih8gFVH8AKmI4gdIRRQ/QCqi+H3y2NVMakkun2xueu8/ClfvbUk7E9l6su29/7iomBfxn1lSs45M/51LnouYH5lp5rL7bCovLK97x8zFsZ2JnLuZ2Vff/YXm7nOp3Lrfkfc2zJ/4YzsS+bOWy/ih4ku1hfJZMbT4CP/TxdQKfncml+2n2jJxrC1Tf3Rs28nfMtvHN7YX9dunkL5tXCifFUOL//m2RJK2yM17HXltTaNsJ+NZxdP/5PL+g2x56cu6HJpKbaljYdyr57Zi6Bjlsl2JtNLCLkDGvfpVXZ4dq8mO06k02owWW4a/NwvNt7h0jiOXM7lvnsMI5vnmQEvuGJu4pt3NsnUHW3ZOgI27zqTl3PvMAqeaLfquacn7M9czuW3mZATj1uzzi+bOi+1c0642InY3n4nj3gupjTEzdIvZIFQMLf6e84XFG37uvW8RRKoADiLgZ1sTmZruSGqCvGrPbGdwePMJ463BFvP65rqGHY8YaUfsAlq8qSnHr2V2m9n0y3+frcFEHJ5Fn8yMJYiU2RWTiRWQCvXcspp8uiWRRiuXU79n8sHGpt3jsW3lZGGbT3wEZTEt3V6Ubxa6mwDw3fVFX2xmyzhvEoJr2l3xu/mM8Pi808SM8dhVN3Z+/MOjbz+KocUnKDiAI9p28Zax1gHOfTTRtEYfvZKV/d75tmGz74LpX83eagl84+uG3Vau3CnEoo1Kcv2vTpkl7ngNrC5KFQzbtA/vdSxirD/SlrdM0Lm3/MfEZr8+3yf+gV/Tci7e631tg+o3dlMlX1z50E5XfK778VnnYzHoPINS8Vgy//W1DRuESXNI6pjMXLv/YVkjiNqPoBN8n3jVQPjEg1z7gl4NrG+8K/4rq+s2q8h+FzreJ77ri3tf2yCLeps5zetWxW+qDRViLvH1OT64zx6UiqHFpyxSHi+bEu6e7HlPG6XxQ7Nan1TmVwPZTXwyif7sp9jST+b3Iz5xeHu8YV95DsnCVsW+P5f4VCH2+KvG50WmMumzYdXfQagYWnyEOG0OPjh0wwjB3spp/9pdcxAybXwSIJj0O3sjs3suhzT2VQ5MBLi650OqBVWDbOSzNeN1/6OiMH7/peK6157fr/iIQn+ey9yXbhdb17Dic95omqzHD/ZsPtPzHJKmamM3nxlPzJibRYrPE8d7n7F6UTG0+JBT+Maj7fJUDXlPG/e0n5bWuU77EEEQgAXEJ4mXVxUnX/52MMhpv1/xEUZP7izQE+ZwOh+Zj23YqKd95kRQfKna2M1nPe0DXnW8+5xBqJgX8SP/X1RE8QOkIoofIBVR/ACpiOIHSEUUP0AqovgBUhHFD5CKKH6AVETxA6Qiih8gFaX48f/zw6D3//P1y4XI0SY6K0rxATdiBRhNoqsrPJglfkRYiOIHC5F/AaKwP1O59V04AAAAAElFTkSuQmCC" InformativeScreenshot="aebe7964251cb6deb251841b9f5f5921.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c54e898-b4ce-47fb-8d1f-4f72379f73a2" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/cskh-vietinbank" CvType="RadioButton" DesignTimeRectangle="804, 571, 22, 23" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;input' idx='2' tag='INPUT' type='radio' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ant-radio-input' aaname='' tag='INPUT' type='radio' /&gt;" Guid="1394539f-39a8-476e-949d-27d9a1963f62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEzSURBVEhLvZR9SsNAEMW9U85QL1KPYFEPoJ5KvUDxAAELKdQ/tNKUbNXVkqe/1EiaTNO6sA48WHZm3r75SI78x1q78PQ8V+FeTd/Z+YWGwxPNXxamfyfxze2dkiTR6Wgkt3rr+IOJx+N7DQbHury61rv/NGP60NuKRb7UbPaoh8lEaZpW4MwdPiunhklcFCtl2fQbmfI8l/deZVlW4MwdPmKItTg6xChBGcn7jBhiLfVbxLxOoHPuJ3W/EUtOW/kWMaUdorRtm9ZMbWLKoW+hRm6zJb/ETDpEbW3kwtEhZo2YeKiRW3G0iRkA6xRq5MLxf8TRWhFteNHWDUT5QEC0TxpQDoGHKCeG2GYLanSIAa9TGn0jmYmzToDzpvQ//jabQAmTZo1QBjhzZ6lsopc4HGt9AQuKVGk/zzQsAAAAAElFTkSuQmCC" InformativeScreenshot="b9d78f1de57552cbbf5ef1b8ecac2a3a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CvType="RadioButton" DesignTimeRectangle="960, 573, 18, 18" ElementType="RadioButton" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span&amp;gt;input' idx='2' tag='INPUT' type='radio' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ant-radio-input' aaname='' tag='INPUT' type='radio' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEzSURBVEhLvZR9SsNAEMW9U85QL1KPYFEPoJ5KvUDxAAELKdQ/tNKUbNXVkqe/1EiaTNO6sA48WHZm3r75SI78x1q78PQ8V+FeTd/Z+YWGwxPNXxamfyfxze2dkiTR6Wgkt3rr+IOJx+N7DQbHury61rv/NGP60NuKRb7UbPaoh8lEaZpW4MwdPiunhklcFCtl2fQbmfI8l/deZVlW4MwdPmKItTg6xChBGcn7jBhiLfVbxLxOoHPuJ3W/EUtOW/kWMaUdorRtm9ZMbWLKoW+hRm6zJb/ETDpEbW3kwtEhZo2YeKiRW3G0iRkA6xRq5MLxf8TRWhFteNHWDUT5QEC0TxpQDoGHKCeG2GYLanSIAa9TGn0jmYmzToDzpvQ//jabQAmTZo1QBjhzZ6lsopc4HGt9AQuKVGk/zzQsAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="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" InformativeScreenshot="770e94fa64e7e39658cd1f05ad41aaa7.jpg" Selector="&lt;html app='msedge.exe' title='Cổng Chăm Sóc Khách Hàng | Vietinbank' /&gt;" Title="Unify CRM" Url="https://lab.connect247.vn/cskh-vietinbank" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,105 @@
+{
+  "name": "UCRMProcess",
+  "description": "UCRM-Process\r\n",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.20.2]",
+    "UiPath.Mail.Activities": "[1.20.0]",
+    "UiPath.System.Activities": "[23.5.0-preview]",
+    "UiPath.Testing.Activities": "[23.5.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.5.0-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "Function UCRM/LoginFlow.xaml",
+        "Function UCRM/EditAccountCheck.xaml",
+        "Function UCRM/Validate DateTime.xaml",
+        "Function UCRM/C247xUCRM.xaml",
+        "Function UCRM/CheckFormVTB.xaml",
+        "Function UCRM/DeleteRecordall.xaml",
+        "Function UCRM/ValidateForm.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f9cf951e-6347-4318-8a39-bede74d6b6d5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Function UCRM\\TC_editAccountCheck.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5c442afc-230c-408f-8290-b4495578f43c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Function UCRM\\TC_ValidateTime.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dbf2977f-4800-4d45-8879-4bc2dff9c8f2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Function UCRM\\TC_UCRMXC247 Success.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a0750461-0655-465d-bcf5-ae6a22698517",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Function UCRM\\UCRM RECORD\\TestCase_Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6a386840-4355-402b-ab1e-8b924af42512",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Function UCRM\\UCRM RECORD\\TestCase_AddRecordUCRM.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "a2a36567-0102-4ed2-8b3b-83503d02f5b5",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

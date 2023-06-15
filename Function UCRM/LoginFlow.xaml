@@ -1,0 +1,263 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginFlow" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1114.4,2340.8" sap2010:WorkflowViewState.IdRef="LoginFlow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LoginFlow" sap:VirtualizedContainerService.HintSize="739.2,2276" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Unify CRM" sap:VirtualizedContainerService.HintSize="676.8,2164" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="c08a1291-af8a-4606-b556-aa4acb09354f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="643.2,1947.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="580.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c08a1291-af8a-4606-b556-aa4acb09354f" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/dashboard" CvElementArea="917, 613, 585, 54" CvTextArea="1183, 628, 52, 23" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="919, 613, 583, 53" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='ant-btn ant-btn-primary' aaname='Login' check:innerText='Login' /&gt;" Guid="a23b2334-f03d-44ab-a3ab-91e4b7c88b24" ImageBase64="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" InformativeScreenshot="b056be0ec1a243f6a33d6b263a1ffa25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Unify CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Login" CvType="Text" DesignTimeRectangle="1185, 624, 50, 31" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' tag='SPAN' type='' class='' check:innerText='Login' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAjCAYAAADfXvn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOnSURBVFhH7VZbU1JRFO6HCPg3msk/0lvvPtb0UG9NDzaN4yUVUfAcJounYLpIWZIaZBDlBS/oSU1EUoT0eBtI7Gsd2bAPeJjoWKdoWDPfA2t/Z+397XXZXGh0OvE/oi6s1lAXVmuoC6s11IUZBxEWWxdM7e0w2Rwa69WhRJjF2oqGVgVdsAilRMMg2mE+PYMCKyxanCrw7wlzvoKYzAAngJycxxVNzs9RIsy1A2YZBEKlRMPwfAUxdgpgH54hDU4VOKcwgfqhB6aOtnym26gvum0Vsk3c3m7qnXxVmDq7Ybb3w9zBqsRa6KdhuLaP86dIR1nGHLw8FZ7dBvO9dr5n79le1C9MpM062WblaOuE2SGq+AOwdDHxlVAUphLR1XfW16Ydp1ycTmE0uay0weAI3JuHkKkfCibvb8Htu4+GDmp8kfH7e/Lc7QwyBW4uCykqIVL4vbPIYi9CYi5kNnC73EdZvLmUQjLLfpPJ2wu4IZQOGn3CRCohTwRSvmI07BjSrJtKTckaXcLgGPxHbKmSVSusgmWSk7ikagF9whxP4C5y6cZ24hA/TkJM7NOXzE7SePhMKQ8Hrq0cMCdZ7ggflqMQl+KQVLf+K8KU/VwLUbjU++ErXOcWNraGJGPiaB3XVWt3t3JsAYgte8k3Cl9RVw4fph/xOOENyGylamFFn4JhePeYXzlzsODXK2zxK+PR7SVCpWtTm/wWUxHyRTBb6KOTFGxqbui8wiqfWZ8widehHA+WrFkm1vlhdyXySapDrePWgCrOXxE2YYfFrgGBBsLSLuORsNg4jdp+8tNI77PCFEzwjKXnKO4cz9i3BDo6e+gpIK6DBpBfdQlGCfOPnn0rTt+LPgGN/jjvsYMVXFWtt8T5qIx9Hqa4b+ArTsRjhN/ZebzRmNHCaFyvLsA9fxZC8AVxh+EpNi1lLbUKwR+AsCbzbH3fhetlPu7l1X3mJMsdIDzzFnem1/RNRV3CeIVVNPlLOM/3Ue/wAVhmOUifRopxG91hBPhc1radJcZX9WT2CxOh5cuDnzmLwHvu1y9MwbMgPKkjyN/ZIpl8mIYn9JRzTkGP9IPXcKez/J9Hdg++aKJs0CjcPyDsj0GgQfF4CM0O3osKLs6m2aGokLZntL/VCWOEOUfgVdqMshSYfYtm7xBaIgkki6VMD/eU1nf6YYywkGqKaphS3k1a350DBmXMiabxGXjL+jGT2YVv/s1vF6XAMGFGoy6s1lAXVmv4T4U58QOBrNTDoU/BiQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="580.8,278.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,200" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dataTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="sheet1" WorkbookPath="Book1.xlsx">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ReadRange>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="580.8,1118.4" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="545.6,1040" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="483.2,928" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,812" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Delay>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT basic_email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="c08a1291-af8a-4606-b556-aa4acb09354f" Text="[CurrentRow.Item(&quot;Username&quot;).ToString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/dashboard" CvElementArea="917, 504, 585, 55" CvTextArea="931, 522, 92, 17" CvTextArgument="Username" CvType="InputBox" DesignTimeRectangle="919, 508, 583, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT basic_email'" FullSelectorArgument="&lt;webctrl id='basic_email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='basic_email' tag='INPUT' type='email' class='ant-input ant-input-lg input__username' aaname='' /&gt;" Guid="63c08cc9-c1d6-45d8-ad93-3918b1c0fb47" ImageBase64="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" InformativeScreenshot="652c57dda07f3145933fc5ccd81d3622.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Unify CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NTypeInto>
+                          <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="Delay_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Delay>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT basic_pass'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c08a1291-af8a-4606-b556-aa4acb09354f" Text="[CurrentRow.Item(&quot;Password&quot;).ToString]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/dashboard" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="934, 604, 528, 31" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT basic_pass'" FullSelectorArgument="&lt;webctrl id='basic_pass' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='basic_pass' tag='INPUT' type='password' class='ant-input ant-input-lg' aaname='' /&gt;" Guid="157b78ad-c264-4252-8155-7e76139a6f55" ImageBase64="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" InformativeScreenshot="b8bd8d40cd28bb1e925d75f51500ebda.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Unify CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="580.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c08a1291-af8a-4606-b556-aa4acb09354f" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/dashboard" CvElementArea="917, 645, 585, 56" CvTextArea="1181, 661, 55, 25" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="919, 646, 583, 53" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='ant-btn ant-btn-primary' aaname='Login' check:innerText='Login' /&gt;" Guid="32611984-fbb7-4e39-a08a-2ad739aaffd4" ImageBase64="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" InformativeScreenshot="ee99f686cd56c3972b73a6f7a954ffe2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Unify CRM' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="Login" CvType="Text" DesignTimeRectangle="1185, 657, 50, 31" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' tag='SPAN' type='' class='' check:innerText='Login' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAjCAYAAADfXvn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOnSURBVFhH7VZbU1JRFO6HCPg3msk/0lvvPtb0UG9NDzaN4yUVUfAcJounYLpIWZIaZBDlBS/oSU1EUoT0eBtI7Gsd2bAPeJjoWKdoWDPfA2t/Z+397XXZXGh0OvE/oi6s1lAXVmuoC6s11IUZBxEWWxdM7e0w2Rwa69WhRJjF2oqGVgVdsAilRMMg2mE+PYMCKyxanCrw7wlzvoKYzAAngJycxxVNzs9RIsy1A2YZBEKlRMPwfAUxdgpgH54hDU4VOKcwgfqhB6aOtnym26gvum0Vsk3c3m7qnXxVmDq7Ybb3w9zBqsRa6KdhuLaP86dIR1nGHLw8FZ7dBvO9dr5n79le1C9MpM062WblaOuE2SGq+AOwdDHxlVAUphLR1XfW16Ydp1ycTmE0uay0weAI3JuHkKkfCibvb8Htu4+GDmp8kfH7e/Lc7QwyBW4uCykqIVL4vbPIYi9CYi5kNnC73EdZvLmUQjLLfpPJ2wu4IZQOGn3CRCohTwRSvmI07BjSrJtKTckaXcLgGPxHbKmSVSusgmWSk7ikagF9whxP4C5y6cZ24hA/TkJM7NOXzE7SePhMKQ8Hrq0cMCdZ7ggflqMQl+KQVLf+K8KU/VwLUbjU++ErXOcWNraGJGPiaB3XVWt3t3JsAYgte8k3Cl9RVw4fph/xOOENyGylamFFn4JhePeYXzlzsODXK2zxK+PR7SVCpWtTm/wWUxHyRTBb6KOTFGxqbui8wiqfWZ8widehHA+WrFkm1vlhdyXySapDrePWgCrOXxE2YYfFrgGBBsLSLuORsNg4jdp+8tNI77PCFEzwjKXnKO4cz9i3BDo6e+gpIK6DBpBfdQlGCfOPnn0rTt+LPgGN/jjvsYMVXFWtt8T5qIx9Hqa4b+ArTsRjhN/ZebzRmNHCaFyvLsA9fxZC8AVxh+EpNi1lLbUKwR+AsCbzbH3fhetlPu7l1X3mJMsdIDzzFnem1/RNRV3CeIVVNPlLOM/3Ue/wAVhmOUifRopxG91hBPhc1radJcZX9WT2CxOh5cuDnzmLwHvu1y9MwbMgPKkjyN/ZIpl8mIYn9JRzTkGP9IPXcKez/J9Hdg++aKJs0CjcPyDsj0GgQfF4CM0O3osKLs6m2aGokLZntL/VCWOEOUfgVdqMshSYfYtm7xBaIgkki6VMD/eU1nf6YYywkGqKaphS3k1a350DBmXMiabxGXjL+jGT2YVv/s1vF6XAMGFGoy6s1lAXVmv4T4U58QOBrNTDoU/BiQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="943a6c6838c7c49022398dfb7269c0c0.jpg" Selector="&lt;html app='chrome.exe' title='Unify CRM' /&gt;" Title="Unify CRM" Url="https://lab.connect247.vn/ucrm-sso/dashboard" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

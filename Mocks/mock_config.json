@@ -1,0 +1,24 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Function UCRM\\EditAccountCheck_mock.xaml",
+      "sourceWorkflowPath": "Function UCRM\\EditAccountCheck.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Function UCRM\\Validate DateTime_mock.xaml",
+      "sourceWorkflowPath": "Function UCRM\\Validate DateTime.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Function UCRM\\Validate DateTime_mock_1.xaml",
+      "sourceWorkflowPath": "Function UCRM\\Validate DateTime.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Function UCRM\\C247xUCRM_mock.xaml",
+      "sourceWorkflowPath": "Function UCRM\\C247xUCRM.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Function UCRM\\UCRM RECORD\\Login_mock.xaml",
+      "sourceWorkflowPath": "Function UCRM\\UCRM RECORD\\Login.xaml"
+    }
+  ]
+}

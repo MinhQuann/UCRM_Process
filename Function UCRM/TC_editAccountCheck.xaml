@@ -1,0 +1,396 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1114.4,2248.8" sap2010:WorkflowViewState.IdRef="TestCase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="831.2,3568.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Họ" />
+      <Variable x:TypeArguments="x:String" Name="MiddleName" />
+      <Variable x:TypeArguments="x:String" Name="Tên" />
+      <Variable x:TypeArguments="x:String" Name="Address" />
+      <Variable x:TypeArguments="x:String" Name="ExpectedResult" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="768.8,916.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="387.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Input Họ" Title="[Họ]">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Họ]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="387.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="MiddleName" Title="[MiddleName]">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[MiddleName]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="387.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Tên" Title="[Tên]">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Tên]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="768.8,225.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EditAccountCheck_mock.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Mocks\Function UCRM\EditAccountCheck_mock.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="Họ">[Họ]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="MiddleName">[MiddleName]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="Name">[Tên]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="768.8,2234.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Dashboard" sap:VirtualizedContainerService.HintSize="706.4,2122.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="68887b49-9a5e-4231-ae43-087806e3dc9b" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="672.8,1905.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="value" />
+                <Variable x:TypeArguments="x:String" Name="Text" />
+                <Variable x:TypeArguments="x:String" Name="Value3" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[Họ = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="610.4,722.4" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376.8,182.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fail&quot;]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="576.8,356.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="533.6,267.2" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_3" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                      <uta:VerifyControlAttribute.ActivityToTest>
+                        <ActivityAction>
+                          <uix:NGetText DisplayName="Get Text 'Họ'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="68887b49-9a5e-4231-ae43-087806e3dc9b" Version="V3">
+                            <uix:NGetText.OutUiElement>
+                              <OutArgument x:TypeArguments="ui:UiElement">
+                                <VariableReference x:TypeArguments="ui:UiElement">
+                                  <VariableReference.Variable>
+                                    <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                                  </VariableReference.Variable>
+                                </VariableReference>
+                              </OutArgument>
+                            </uix:NGetText.OutUiElement>
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/profile-setting" CvElementArea="726, 418, 774, 35" CvTextArea="739, 427, 43, 16" CvTextArgument="Hoang" CvType="InputBox" DesignTimeRectangle="729, 421, 768, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Hoàng'" FullSelectorArgument="&lt;webctrl id='Last_Name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Last_Name' tag='INPUT' type='text' class='ant-input ant-input-status-success' aaname='Họ' /&gt;" Guid="6e9c3031-9d65-4900-ac47-2a30acda9e4f" InformativeScreenshot="7bf81ea51e6f21e59d2f2ea802476d6b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="* Ho" CvType="Text" DesignTimeRectangle="729, 390, 29, 22" ElementType="Text" FriendlyName="'Họ'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ant-form-item-required' aaname='Họ' check:innerText='Họ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAaCAYAAAA5WTUBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEkSURBVEhL7ZM/aoRAFIdzGmtvIKKFTQiClWhjKXgAKxsLba0ExRN4DGsRL2DlBUQELfyFmXUS2H+Z7LKbhfjBw3lveMzHm/ENL8AuwdglGLsE42aJIAggCAKyLNsqB0h+rn6NF5d4/9gW5+GVmKYJeZ5DURSIogjbtlFVFd1jnEqww4+/R/BIrOuKJElobpomfN+HJEnQNA1N02wdlyZBDmZxASZxKYhE3/cwDAO6rqPrOtpXliXdj+OY5oS7JRzHQRiGX0FyJlHXNVRVheu6GIaB9rGa53kYx5HWHnodt0swrkyBwCNx33Vw8PiHyQGPBGGeZxRF8ctf9A94isSyLIiiCLIsn0yB8BQJ8jbSNIVlWWjbdqt+83+u4yd2CcYucQD4BH3De51yIcHdAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <uix:NGetText.TextString>
+                              <OutArgument x:TypeArguments="x:String">
+                                <VariableReference x:TypeArguments="x:String">
+                                  <VariableReference.Variable>
+                                    <Variable x:TypeArguments="x:String" x:Name="__ReferenceID0" Name="_autogenerated_TextString" />
+                                  </VariableReference.Variable>
+                                </VariableReference>
+                              </OutArgument>
+                            </uix:NGetText.TextString>
+                            <uix:NGetText.WordsInfo>
+                              <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                                <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                                  <VariableReference.Variable>
+                                    <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                                  </VariableReference.Variable>
+                                </VariableReference>
+                              </OutArgument>
+                            </uix:NGetText.WordsInfo>
+                          </uix:NGetText>
+                        </ActivityAction>
+                      </uta:VerifyControlAttribute.ActivityToTest>
+                      <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                        <ActivityFunc x:TypeArguments="x:Object">
+                          <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_7">
+                            <uta:ArgumentsBridge.Input>
+                              <InArgument x:TypeArguments="x:Object">
+                                <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                              </InArgument>
+                            </uta:ArgumentsBridge.Input>
+                          </uta:ArgumentsBridge>
+                        </ActivityFunc>
+                      </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                      <uta:VerifyControlAttribute.Expression>
+                        <InArgument x:TypeArguments="x:String">[Họ]</InArgument>
+                      </uta:VerifyControlAttribute.Expression>
+                    </uta:VerifyControlAttribute>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="610.4,267.2" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_4" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'Tên đệm'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="68887b49-9a5e-4231-ae43-087806e3dc9b" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/profile-setting" CvElementArea="726, 506, 774, 36" CvTextArea="739, 516, 31, 15" CvTextArgument="Nam" CvType="InputBox" DesignTimeRectangle="729, 510, 768, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Nam'" FullSelectorArgument="&lt;webctrl id='Middle_Name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Middle_Name' tag='INPUT' type='text' class='ant-input ant-input-status-success' aaname='Tên đệm' /&gt;" Guid="02664261-d220-4c52-b64a-66c0a4920726" InformativeScreenshot="115339823b2de1a9c3ab13ddd466cfd9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Ten dem" CvType="Text" DesignTimeRectangle="729, 480, 55, 22" ElementType="Text" FriendlyName="'Tên đệm'" FullSelectorArgument="&lt;webctrl aaname='Tên đệm' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Tên đệm' tag='LABEL' type='' class='' check:innerText='Tên đệm' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADsAAAAaCAYAAAAJ1SQgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMBSURBVFhH7VVBS6pBFH2/xnWgELQxMTJIKFFsUS3cVS6CxEhEEonAaFPUyggiaBHUIhRsEQSFIIJECW5E3FSCG20hFOGJc58jnz4JrYTweWDwc+bee+bM3HvnD/4jDMT2KwZi+xUDsZ/h4eEBs7Oz0Ov12N/fR7Vara98D5FIBDqdTn4VarUarq+vMTk5CaPRiNPTU7y/v9dXu0dDbDqdxtjYmBC2G0tLS7i/v8fCwgLW19cRj8fhdDpxdHT0rQ1cXl7+w6UEJ5NJzM3NYW9vDycnJ3A4HIhGo7L2FTTEFgoFbG1tYWNjA16vF8PDw3KiwWBQ5g4ODn7sFrVgzKenJ+zu7opQ/r68vNRXfxZt01jdMm9TS8y0uri4gNVqlY3ZbDb5z3l1Q263Gz6fT9KcdldXV3XvZjw/P2N5eRlDQ0NSFqurq023Sry+vuLw8BBms1ns5ufncXt7K2uKb3NzE4uLi404Nzc3CAQCwk8/ZqBCV2LpODIyArvdLgEtFgtGR0eRSCQa5CRlqnPwm2lYKpXqEf7i7e0Nfr9f7CnA4/HI5lrFUqgSyQNk3U5PTyOXyzX46Ed/2vA/M1Ibk6n/+Pgo8ToWy3RbWVnBxMQEMpmMzPHWGDwcDjfI19bWREylUhHB4+PjUuta5PN5TE1NyU0Ui0WZ29nZaRLLA+JBaW2Oj4/FhvWr+OhHqD27XC7xVfyc4xrRsVjWFW+UBK2DDUuR85ugH/21ZAoqPg9P9QGKpL8Sq2y0PGrQRvG12qs9t+PvWixTlyfLrqhGKpXqmdiZmRmcnZ018WWz2d6KVc5MWzYlgk/O+fk5yuVyV2I7SWPWGeuN/jxMgjHJx8bVU7FELBaTBsVGwYbBmjAYDHLa3YhtbVCsc8bVbp4dns8dGxSziXFpazKZmjKpZ2K5AQpmapGIzYodU3vSnYgl+PTwuVFPRigUato8wbhsSp89dd8W26/49WLZwFgyzKK7u7v67Nfw68Wyvre3t+XNbX2vu8UgjfsVA7H9ioHY/gTwAZDFlLoeO4K6AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.TextString>
+                        <OutArgument x:TypeArguments="x:String">
+                          <VariableReference x:TypeArguments="x:String">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="_autogenerated_TextString" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.TextString>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_8">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">[MiddleName]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+              </uta:VerifyControlAttribute>
+              <If Condition="[Tên=&quot;&quot;]" sap:VirtualizedContainerService.HintSize="610.4,722.4" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376.8,182.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Fail&quot;]" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="576.8,356.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="533.6,267.2" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_5" Operator="Equality" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                      <uta:VerifyControlAttribute.ActivityToTest>
+                        <ActivityAction>
+                          <uix:NGetText DisplayName="Get Text 'Tên'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="68887b49-9a5e-4231-ae43-087806e3dc9b" Version="V3">
+                            <uix:NGetText.OutUiElement>
+                              <OutArgument x:TypeArguments="ui:UiElement">
+                                <VariableReference x:TypeArguments="ui:UiElement">
+                                  <VariableReference.Variable>
+                                    <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                                  </VariableReference.Variable>
+                                </VariableReference>
+                              </OutArgument>
+                            </uix:NGetText.OutUiElement>
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/profile-setting" CvElementArea="726, 596, 774, 35" CvTextArea="739, 604, 30, 15" CvTextArgument="Tran" CvType="InputBox" DesignTimeRectangle="729, 599, 768, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Trần'" FullSelectorArgument="&lt;webctrl id='First_Name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='First_Name' tag='INPUT' type='text' class='ant-input ant-input-status-success' aaname='Tên' /&gt;" Guid="72e36612-4cc1-48ed-997c-84296f853df8" InformativeScreenshot="07cfdbc29785b73a2d480c6cd8e1aafa.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="* Ten" CvType="Text" DesignTimeRectangle="729, 568, 34, 22" ElementType="Text" FriendlyName="'Tên'" FullSelectorArgument="&lt;webctrl aaname='Tên' class='ant-form-item-required' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Tên' class='ant-form-item-required' tag='LABEL' type='' check:innerText='Tên' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAaCAYAAADbhS54AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGzSURBVFhH7ZRBi0FRFMfn01grStmwEIppkmLBBxA7pViIhQ17OykbSwtRLGxtlAU+gJWNDRaK5D/9T+9Z6GKuyczUvF+d3n3nvXvfr3PufW/4o1hiulhiuvxPsfl8jkQiAYfDgXq9jv1+bzx5zFNi0+kUPp8PNptNGel0GrPZDKlUCqVSCYPBALFYDK1WC6fTyVjlPk+JLZdL1Go1VCoV5HI5uFwuhEIhlMtlyTUaDa3qqLgt9v5hDO5jVo9V2u12RhY4n8/odrsIh8NSxUgkIvfMD4dDyWUyGRQKBWk13xuNRsZslZgpdH29wS0xts/tdiMajaJYLCIQCMDr9WI8Hl/E7Ha7tJvBcTKZxHq9lvnqilHGjAeoxNjGbDaLYDCIxWIhOVaDLa9WqxexfD6P4/GI7XYrcn6/X/YmeYnYarWSSvHj18HDYIpxTDiP87kO1yMvaaUpxva12230er1LTCaTJ8VMvlAtohIzP8TWccMT/iY6nQ42m803xb6ISoz0+33Z/B6PR04e95DT6ZSq/aoYfwuUi8fjIsGD0Gw2cTgcfkbsVVhiulhiulhiulhiegCffA9U+/c6RFQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <uix:NGetText.TextString>
+                              <OutArgument x:TypeArguments="x:String">
+                                <VariableReference x:TypeArguments="x:String">
+                                  <VariableReference.Variable>
+                                    <Variable x:TypeArguments="x:String" x:Name="__ReferenceID2" Name="_autogenerated_TextString" />
+                                  </VariableReference.Variable>
+                                </VariableReference>
+                              </OutArgument>
+                            </uix:NGetText.TextString>
+                            <uix:NGetText.WordsInfo>
+                              <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                                <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                                  <VariableReference.Variable>
+                                    <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                                  </VariableReference.Variable>
+                                </VariableReference>
+                              </OutArgument>
+                            </uix:NGetText.WordsInfo>
+                          </uix:NGetText>
+                        </ActivityAction>
+                      </uta:VerifyControlAttribute.ActivityToTest>
+                      <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                        <ActivityFunc x:TypeArguments="x:Object">
+                          <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_9">
+                            <uta:ArgumentsBridge.Input>
+                              <InArgument x:TypeArguments="x:Object">
+                                <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID2}" />
+                              </InArgument>
+                            </uta:ArgumentsBridge.Input>
+                          </uta:ArgumentsBridge>
+                        </ActivityFunc>
+                      </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                      <uta:VerifyControlAttribute.Expression>
+                        <InArgument x:TypeArguments="x:String">[Tên]</InArgument>
+                      </uta:VerifyControlAttribute.Expression>
+                    </uta:VerifyControlAttribute>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-248, 1071, 1938, 1038" BrowserType="Edge" IconBase64="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" InformativeScreenshot="52a88ee66b0d920e94c23de205993bea.jpg" Selector="&lt;html app='msedge.exe' title='Dashboard' /&gt;" Title="Dashboard" Url="https://lab.connect247.vn/ucrm-sso/profile-setting" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
