@@ -94,6 +94,13 @@
         "executionTemplateType": "PackageFileTemplate",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Function UCRM\\UCRM RECORD\\TestCase_FLOWCHARTCRM.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "141947da-7001-4f73-a1ad-80a73c92873c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Function UCRM\\UCRM RECORD\\TC_DelRecord.xaml"
       }
     ],
     "modernBehavior": true
