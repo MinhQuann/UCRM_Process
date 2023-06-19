@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>798,702</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1888,941</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FlowChartCRM_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -71,33 +71,35 @@
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="FlowChartCRM" sap:VirtualizedContainerService.HintSize="684,637" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="FlowChartCRM" sap:VirtualizedContainerService.HintSize="684,843" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <av:Point x:Key="ShapeLocation">220,2.5</av:Point>
+        <av:Point x:Key="ShapeLocation">130,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <x:Double x:Key="Width">650</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">250,77.5 250,124</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">130,40 100,40 100,103.52</av:PointCollection>
+        <x:Double x:Key="Height">806</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">150,124</av:Point>
+          <av:Point x:Key="ShapeLocation">20,214</av:Point>
           <av:Size x:Key="ShapeSize">200,52</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">250,176 250,214</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">120,266 120,304</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\Login.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AddRecordUCRM" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\AddRecordUCRM.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="url">https://lab.connect247.vn/ucrm-sso/sign-in</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="TextDasBoard">Dashboard</InArgument>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -109,12 +111,12 @@
         <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">150,214</av:Point>
+              <av:Point x:Key="ShapeLocation">20,304</av:Point>
               <av:Size x:Key="ShapeSize">200,52</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">250,266 250,294</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">120,356 120,394</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AddRecordUCRM" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\AddRecordUCRM.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Create contact" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\UCRMCreateContact.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <scg:Dictionary x:TypeArguments="x:String, Argument" />
             </ui:InvokeWorkflowFile.Arguments>
@@ -128,12 +130,11 @@
             <FlowStep x:Name="__ReferenceID1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">150,294</av:Point>
+                  <av:Point x:Key="ShapeLocation">20,394</av:Point>
                   <av:Size x:Key="ShapeSize">200,52</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">250,346 250,374</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Create contact" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\UCRMCreateContact.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Create Ticket" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\CreateTicket=Contact.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                 </ui:InvokeWorkflowFile.Arguments>
@@ -143,26 +144,6 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID2">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">150,374</av:Point>
-                      <av:Size x:Key="ShapeSize">200,52</av:Size>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Create Ticket" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\CreateTicket=Contact.xaml">
-                    <ui:InvokeWorkflowFile.Arguments>
-                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                    </ui:InvokeWorkflowFile.Arguments>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:InvokeWorkflowFile>
-                </FlowStep>
-              </FlowStep.Next>
             </FlowStep>
           </FlowStep.Next>
         </FlowStep>
@@ -170,12 +151,12 @@
     </FlowStep>
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
-    <x:Reference>__ReferenceID2</x:Reference>
-    <FlowStep>
+    <FlowStep x:Name="__ReferenceID2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">400,124</av:Point>
+          <av:Point x:Key="ShapeLocation">20,554</av:Point>
           <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">120,554 120,554</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailFunction" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\SendEmail.xaml">
@@ -188,6 +169,31 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
+      <FlowStep.Next>
+        <x:Reference>__ReferenceID2</x:Reference>
+      </FlowStep.Next>
+    </FlowStep>
+    <FlowStep x:Name="__ReferenceID4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">0,103.52</av:Point>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">100,155.51999999999998 100,185.52 120,185.52 120,214</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Function UCRM\UCRM RECORD\Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\Login.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <FlowStep.Next>
+        <x:Reference>__ReferenceID3</x:Reference>
+      </FlowStep.Next>
     </FlowStep>
   </Flowchart>
 </Activity>

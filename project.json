@@ -74,33 +74,10 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "a0750461-0655-465d-bcf5-ae6a22698517",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Function UCRM\\UCRM RECORD\\TestCase_Login.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "6a386840-4355-402b-ab1e-8b924af42512",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Function UCRM\\UCRM RECORD\\TestCase_AddRecordUCRM.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "9d1da44d-de74-4e2e-bb7a-430da1e17eb8",
-        "executionTemplatePath": "Test With Timeout (UiPath.Testing.Activities);UiPath.Testing.Activities;Test With Timeout.xaml",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "PackageFileTemplate",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Function UCRM\\UCRM RECORD\\TestCase_FLOWCHARTCRM.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "141947da-7001-4f73-a1ad-80a73c92873c",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Function UCRM\\UCRM RECORD\\TC_DelRecord.xaml"
       }
     ],
     "modernBehavior": true
