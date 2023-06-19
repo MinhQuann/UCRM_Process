@@ -19,6 +19,10 @@
     {
       "mockFilePath": "Mocks\\Function UCRM\\UCRM RECORD\\Login_mock.xaml",
       "sourceWorkflowPath": "Function UCRM\\UCRM RECORD\\Login.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Function UCRM\\UCRM RECORD\\FlowChartCRM_mock.xaml",
+      "sourceWorkflowPath": "Function UCRM\\UCRM RECORD\\FlowChartCRM.xaml"
     }
   ]
 }
