@@ -140,7 +140,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">20,394</av:Point>
                   <av:Size x:Key="ShapeSize">200,53</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">220,420.5 250,420.5 250,293.5 440,293.5 440,323.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">220,420.5 250,420.5 250,313.50000000000006 550,313.50000000000006 550,343.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Create Ticket" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\CreateTicket=Contact.xaml">
@@ -157,9 +157,9 @@
                 <FlowStep x:Name="__ReferenceID9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">340,323.5</av:Point>
+                      <av:Point x:Key="ShapeLocation">450,343.5</av:Point>
                       <av:Size x:Key="ShapeSize">200,53</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">340,350 330,350 330,446.5</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">450,370 330,370 330,446.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Email or delete?" Options="[{&quot;Email&quot;, &quot;Del&quot;}]" Title="Email or delete?">
@@ -200,7 +200,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">295,446.5</av:Point>
                           <av:Size x:Key="ShapeSize">70,87</av:Size>
-                          <av:PointCollection x:Key="Default">312.5,446.5 312.5,364 0,364 0,540.5 10,540.5</av:PointCollection>
+                          <av:PointCollection x:Key="Default">312.5,446.5 234.5,446.5 234.5,478.4627650939487 0,478.4627650939487 0,540.5 10,540.5</av:PointCollection>
                           <av:PointCollection x:Key="DelConnector">365,490 520,490 520,534</av:PointCollection>
                           <x:String x:Key="DefaultCaseDisplayName">Email</x:String>
                         </scg:Dictionary>
