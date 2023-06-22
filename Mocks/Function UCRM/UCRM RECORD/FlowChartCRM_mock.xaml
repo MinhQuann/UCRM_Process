@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1486,969</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1486.0000000000002,969</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FlowChartCRM_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -83,6 +83,7 @@
       <Variable x:TypeArguments="x:String" Name="YourChoice" />
       <Variable x:TypeArguments="x:String" Name="Test" />
       <Variable x:TypeArguments="x:String" Name="Result" />
+      <Variable x:TypeArguments="x:String" Name="EditChoice" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -95,7 +96,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID10</x:Reference>
+      <x:Reference>__ReferenceID14</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID3">
       <sap:WorkflowViewStateService.ViewState>
@@ -162,7 +163,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">450,370 330,370 330,446.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Email or delete?" Options="[{&quot;Email&quot;, &quot;Del&quot;}]" Title="Email or delete?">
+                  <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Email or delete?" Options="[{&quot;Email&quot;, &quot;Del&quot;,&quot;Edit&quot;}]" Title="Email or delete?">
                     <ui:InputDialog.Result>
                       <OutArgument x:TypeArguments="x:String">[Result]</OutArgument>
                     </ui:InputDialog.Result>
@@ -198,16 +199,17 @@
                           <av:Point x:Key="ShapeLocation">295,446.5</av:Point>
                           <av:Size x:Key="ShapeSize">70,87</av:Size>
                           <av:PointCollection x:Key="Default">312.5,446.5 234.5,446.5 234.5,478.4627650939487 0,478.4627650939487 0,540.5 10,540.5</av:PointCollection>
-                          <av:PointCollection x:Key="DelConnector">365,490 520,490 520,534</av:PointCollection>
+                          <av:PointCollection x:Key="DelConnector">365,490 450,490 450,533.5</av:PointCollection>
                           <x:String x:Key="DefaultCaseDisplayName">Email</x:String>
+                          <av:PointCollection x:Key="EditConnector">365,468.25 395,468.25 395,440 670,440</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <FlowStep x:Key="Del" x:Name="__ReferenceID4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">420,534</av:Point>
+                            <av:Point x:Key="ShapeLocation">350,533.5</av:Point>
                             <av:Size x:Key="ShapeSize">200,53</av:Size>
-                            <av:PointCollection x:Key="ConnectorLocation">520,586 520,616 320,616 320,626.5</av:PointCollection>
+                            <av:PointCollection x:Key="ConnectorLocation">450,586.5 450,616.5 320,616.5 320,626.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InputDialog OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Delete choice" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Which one u want to del?" Options="[{&quot;Contact&quot;,&#xA;&quot;Công ty&quot;}]">
@@ -276,6 +278,73 @@
                           </FlowDecision>
                         </FlowStep.Next>
                       </FlowStep>
+                      <FlowStep x:Key="Edit" x:Name="__ReferenceID10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">670,413.5</av:Point>
+                            <av:Size x:Key="ShapeSize">200,53</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">770,466.5 770,496.50000000000006 780,496.50000000000006 780,516.5</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="EditContact or Công ty" Options="[{&quot;Contact&quot;,&quot;Công ty&quot;}]" Title="Edit Contact or Công ty?">
+                          <ui:InputDialog.Result>
+                            <OutArgument x:TypeArguments="x:String">[EditChoice]</OutArgument>
+                          </ui:InputDialog.Result>
+                        </ui:InputDialog>
+                        <FlowStep.Next>
+                          <FlowDecision x:Name="__ReferenceID11" Condition="[EditChoice = &quot;Contact&quot;]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <av:Point x:Key="ShapeLocation">740.5,516.5</av:Point>
+                                <av:Size x:Key="ShapeSize">79,87</av:Size>
+                                <av:PointCollection x:Key="TrueConnector">740.5,560 670,560 670,633.5</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">819.5,560 920,560 920,643.5</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <FlowDecision.True>
+                              <FlowStep x:Name="__ReferenceID12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">570,633.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Edit Contact" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\EditContactinCompo.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:InvokeWorkflowFile>
+                              </FlowStep>
+                            </FlowDecision.True>
+                            <FlowDecision.False>
+                              <FlowStep x:Name="__ReferenceID13">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">820,643.5</av:Point>
+                                    <av:Size x:Key="ShapeSize">200,53</av:Size>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Edit Cong ty" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\Edit Công ty.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:InvokeWorkflowFile>
+                              </FlowStep>
+                            </FlowDecision.False>
+                          </FlowDecision>
+                        </FlowStep.Next>
+                      </FlowStep>
                     </FlowSwitch>
                   </FlowStep.Next>
                 </FlowStep>
@@ -288,7 +357,7 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID0</x:Reference>
-    <FlowStep x:Name="__ReferenceID10">
+    <FlowStep x:Name="__ReferenceID14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">20,124</av:Point>
@@ -316,5 +385,9 @@
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
     <x:Reference>__ReferenceID9</x:Reference>
+    <x:Reference>__ReferenceID10</x:Reference>
+    <x:Reference>__ReferenceID11</x:Reference>
+    <x:Reference>__ReferenceID12</x:Reference>
+    <x:Reference>__ReferenceID13</x:Reference>
   </Flowchart>
 </Activity>
