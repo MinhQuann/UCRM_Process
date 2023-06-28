@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1486,969.0000000000001</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1486,969</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FlowChartCRM_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -298,15 +298,15 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <av:Point x:Key="ShapeLocation">740.5,516.5</av:Point>
                                 <av:Size x:Key="ShapeSize">79,87</av:Size>
-                                <av:PointCollection x:Key="TrueConnector">740.5,560 670,560 670,633.5</av:PointCollection>
-                                <av:PointCollection x:Key="FalseConnector">819.5,560 920,560 920,643.5</av:PointCollection>
+                                <av:PointCollection x:Key="TrueConnector">740.5,560 690,560 690,623.5</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">819.5,560 930,560 930,623.5</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <FlowDecision.True>
                               <FlowStep x:Name="__ReferenceID12">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">570,633.5</av:Point>
+                                    <av:Point x:Key="ShapeLocation">590,623.5</av:Point>
                                     <av:Size x:Key="ShapeSize">200,53</av:Size>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -326,7 +326,7 @@
                               <FlowStep x:Name="__ReferenceID13">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">820,643.5</av:Point>
+                                    <av:Point x:Key="ShapeLocation">830,623.5</av:Point>
                                     <av:Size x:Key="ShapeSize">200,53</av:Size>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
