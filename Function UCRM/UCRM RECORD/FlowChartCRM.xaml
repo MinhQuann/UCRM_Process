@@ -174,9 +174,9 @@
                         <FlowStep x:Name="__ReferenceID0">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">10,514</av:Point>
+                              <av:Point x:Key="ShapeLocation">0,573.5</av:Point>
                               <av:Size x:Key="ShapeSize">200,53</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">110,514 110,514</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">100,573.5 100,573.5</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailFunction" sap:VirtualizedContainerService.HintSize="200,53" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Function UCRM\UCRM RECORD\SendEmail.xaml">
@@ -198,7 +198,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">295,446.5</av:Point>
                           <av:Size x:Key="ShapeSize">70,87</av:Size>
-                          <av:PointCollection x:Key="Default">312.5,446.5 234.5,446.5 234.5,478.4627650939487 0,478.4627650939487 0,540.5 10,540.5</av:PointCollection>
+                          <av:PointCollection x:Key="Default">312.5,446.5 312.5,364 0,364 0,600 0,600</av:PointCollection>
                           <av:PointCollection x:Key="DelConnector">365,490 470,490 470,553.5</av:PointCollection>
                           <x:String x:Key="DefaultCaseDisplayName">Email</x:String>
                           <av:PointCollection x:Key="EditConnector">365,468.25 395,468.25 395,440 670,440</av:PointCollection>
