@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1486,969</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1486,969.0000000000001</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FlowChartCRM_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -198,7 +198,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">295,446.5</av:Point>
                           <av:Size x:Key="ShapeSize">70,87</av:Size>
-                          <av:PointCollection x:Key="Default">312.5,446.5 312.5,364 0,364 0,600 0,600</av:PointCollection>
+                          <av:PointCollection x:Key="Default">312.5,446.5 312.5,366.5 289.1329074746873,366.5 289.1329074746873,477.09097229423514 0,477.09097229423514 0,600</av:PointCollection>
                           <av:PointCollection x:Key="DelConnector">365,490 470,490 470,553.5</av:PointCollection>
                           <x:String x:Key="DefaultCaseDisplayName">Email</x:String>
                           <av:PointCollection x:Key="EditConnector">365,468.25 395,468.25 395,440 670,440</av:PointCollection>
