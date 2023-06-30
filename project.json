@@ -47,7 +47,11 @@
         "Function UCRM/C247xUCRM.xaml",
         "Function UCRM/CheckFormVTB.xaml",
         "Function UCRM/DeleteRecordall.xaml",
-        "Function UCRM/ValidateForm.xaml"
+        "Function UCRM/ValidateForm.xaml",
+        "Function UCRM/UCRM RECORD/testform.xaml",
+        "Function UCRM/UCRM RECORD/Testform2.xaml",
+        "Function UCRM/testform.xaml",
+        "Function UCRM/Testform2.xaml"
       ]
     },
     "fileInfoCollection": [

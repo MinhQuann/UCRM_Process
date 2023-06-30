@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>674,2025</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1058,2025</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -141,7 +141,7 @@
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
             <Delay Duration="00:00:00.3000000" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '12345678x@X'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="9bf9919e-57a4-4e25-99f2-892b05cf87ff" Text="12345678x@X" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '12345678x@X'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="486,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9bf9919e-57a4-4e25-99f2-892b05cf87ff" Text="12345678x@X" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://lab.connect247.vn/ucrm-sso/dashboard" DesignTimeRectangle="920, 610, 422, 25" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'12345678x@X'" FullSelectorArgument="&lt;webctrl id='basic_pass' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='basic_pass' tag='INPUT' type='password' class='ant-input ant-input-lg' aaname='' /&gt;" Guid="4817f345-9d83-4985-b57c-7ee676e8ccd2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaoAAAAdCAYAAAD7NyiPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIESURBVHhe7doxSxthHMfx5x0YEHQrKOjm4GtwKdqh5B04SRYRHDt0s4NEKIKT3VLocJBBtwQ6ZCu4HChkcOgiQUSaJeDiz3uS+x8XuDpe/sP3C5/luOduux9Bg4iIiBzHUBERkeuKoZq8SI/jV43+AQCwOHGL4iZZxVAxUgAAL+ImWcVQVd0IAMCiWAwVAMAli6ECALhkMVQAAJcshgoA4JLFUAEAXLIYKgCASxZDBQBwyZobqt7JrlZC0MrHU/We8psHp9pZDQqru/o6sAc868fBtpZCQ1sHiYb5QyvP3yfa32ooLG9rv/P87vla3wUAcM0qDVVfrfVsJLKPfwhranVnNyaHa/m1oA+H/dkD7s61l18Loalvd/He6vNpu5lfy3w6V/rf8/W+CwDgm1Uaqgedfc5+jcQP+nL2QU9nN6bfm9mvkfiRb2ivfZ8/oK+jzfzjv3msZPqLpvr86OqLNqbngzZsfCrP1/suAIBv1vzfqEa3Si47Sv5MSjdPNOh2dNG91d/iWmZ4o5+X1+oNS9cqz2cD9PtaF79ulJZHoup8re8CAHhm8c8UAACXLIYKAOCSxVABAFyyGCoAgEsWQwUAcMliqAAALlkMFQDAJYuhAgC4ZDFUAACXrGKoHsfVNwIAULe4SVYxVJMXxgoAsHhxi+ImWcVQEREReYyhIiIix0lvB3YARm0LXfwAAAAASUVORK5CYII=" InformativeScreenshot="9d76e4ac3340615101cd14c8da6520cc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='List view' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
               </uix:NTypeInto.Target>
